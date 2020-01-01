@@ -4,9 +4,9 @@ import { themes } from "@storybook/theming"
 addParameters({
   options: {
     showPanel: false,
-    theme: themes.dark,
+    theme: themes.light,
   },
 })
 
 // automatically import all files ending in *.stories.js
-configure(require.context("../stories", true, /\.stories\.js$/), module)
+configure(require.context("../src", true, /\.stories\.js$/), module)
