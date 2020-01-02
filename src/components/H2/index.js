@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "@emotion/styled"
 
-const Root = styled.h1`
+const Root = styled.h2`
   font-family: "Roboto Slab", serif;
   font-weight: 700;
 `
 
-const H1 = ({ children }) => {
+const H2 = ({ children }) => {
   return <Root>{children}</Root>
 }
 
-export default H1
+export default H2
