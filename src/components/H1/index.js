@@ -3,6 +3,7 @@ import styled from "@emotion/styled"
 
 const Root = styled.h1`
   font-family: "Roboto Slab", serif;
+  font-size: 2.8em;
   font-weight: 700;
 `
 
