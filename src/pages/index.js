@@ -4,10 +4,10 @@ import { Helmet } from "react-helmet"
 import Header from "components/Header"
 import Content from "components/Content"
 import TitleBar from "components/TitleBar"
-import HorizontalDivider from "components/HorizontalDivider"
+import CenteredColumn from "components/CenteredColumn"
 import H1 from "components/H1"
 import H2 from "components/H2"
-import { Link } from "gatsby"
+import Link from "components/Link"
 
 const Index = () => {
   return (
@@ -16,22 +16,39 @@ const Index = () => {
         <title>Abstract UI - Home</title>
       </Helmet>
 
-      <Header />
+      <Header>
+        <CenteredColumn>
+          <span
+            style={{
+              fontSize: 25,
+              fontWeight: 700,
+              color: "#fff",
+            }}
+          >
+            Abstract UI
+          </span>
+        </CenteredColumn>
+      </Header>
 
       <Content>
         <TitleBar>
-          <H1>Abstract UI</H1>
+          <CenteredColumn>
+            <H1>Abstract UI</H1>
+          </CenteredColumn>
         </TitleBar>
 
-        <HorizontalDivider />
-
-        <H2>Interfaces</H2>
-
-        <Link to="/interfaces/raw-Parent/">raw Parent</Link>
-        <br />
-        <Link to="/interfaces/raw-Styleable/">raw Styleable</Link>
-        <br />
-        <Link to="/interfaces/Project/">Project</Link>
+        <CenteredColumn>
+          <H2>Interfaces</H2>
+          <Link to="/interfaces/raw-interface-Parent/">
+            raw interface Parent
+          </Link>
+          <br />
+          <Link to="/interfaces/raw-interface-Styleable/">
+            raw interface Styleable
+          </Link>
+          <br />
+          <Link to="/interfaces/interface-Project/">interface Project</Link>
+        </CenteredColumn>
       </Content>
     </>
   )

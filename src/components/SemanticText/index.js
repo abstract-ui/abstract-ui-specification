@@ -33,7 +33,8 @@ const Monospaced = styled.span`
 `
 
 const InterfaceProperty = styled.span`
-  border-bottom: 2px dotted;
+  color: #537;
+  border-bottom: 2px dotted #537;
 `
 
 const SemanticText = ({ variant, children }) => {

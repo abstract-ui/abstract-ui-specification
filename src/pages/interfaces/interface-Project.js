@@ -12,6 +12,8 @@ import H2 from "components/H2"
 import H3 from "components/H3"
 import P from "components/P"
 import SemanticText from "components/SemanticText"
+import StabilityRating from "components/StabilityRating"
+import Link from "components/Link"
 
 const Project = () => {
   return (
@@ -44,30 +46,36 @@ const Project = () => {
         </TitleBar>
 
         <BreadcrumbsBar>
-          <CenteredColumn></CenteredColumn>
+          <CenteredColumn>
+            <span style={{ color: "darkblue" }}>
+              <Link to="/">Interfaces</Link>
+              &nbsp;&nbsp;<strong>&rsaquo;</strong>&nbsp;&nbsp;
+              <Link to="/">Project</Link>
+            </span>
+          </CenteredColumn>
         </BreadcrumbsBar>
 
         <CenteredColumn>
           <P>The Project interface represents an Abstract UI project.</P>
 
-          <P>
-            <SemanticText variant="stability">Stability: 1</SemanticText>
-          </P>
-
           <HorizontalDivider />
 
           <H2>Properties</H2>
           <H3>
-            <SemanticText variant="interface property">name</SemanticText>
+            <SemanticText variant="interface property">
+              &rarr; name
+            </SemanticText>
           </H3>
           <P>
-            <SemanticText variant="data type">&lt;string&gt;</SemanticText>
+            <SemanticText variant="data type">
+              <Link to="/">&lt;string&gt;</Link>
+            </SemanticText>
           </P>
           <P>The name of the project.</P>
 
           <H3>
             <SemanticText variant="interface property">
-              description
+              &rarr; description
             </SemanticText>
           </H3>
           <P>
@@ -77,25 +85,45 @@ const Project = () => {
 
           <H3>
             <SemanticText variant="interface property">
-              user interface
+              &rarr; user interfaces
             </SemanticText>
           </H3>
           <P>
             <SemanticText variant="monospaced">
-              ?<SemanticText variant="primitive">UserInterface</SemanticText>
+              [<SemanticText variant="primitive">UserInterface</SemanticText>]
             </SemanticText>
           </P>
-          <P>A user interface.</P>
+          <P>A list of user interfaces.</P>
 
           <H3>
-            <SemanticText variant="interface property">tokens</SemanticText>
+            <SemanticText variant="interface property">
+              &rarr; tokens
+            </SemanticText>
           </H3>
           <P>
             <SemanticText variant="monospaced">
-              [<SemanticText variant="primitive">Token</SemanticText>]
+              [
+              <SemanticText variant="primitive">
+                <Link to="/">Token</Link>
+              </SemanticText>
+              ]
             </SemanticText>
           </P>
           <P>A list of tokens.</P>
+
+          <HorizontalDivider />
+
+          <H2>Ancestry</H2>
+          <P>
+            <em>none</em>
+          </P>
+
+          <HorizontalDivider />
+
+          <H2>Stability</H2>
+          <P>
+            <StabilityRating level={1} />
+          </P>
         </CenteredColumn>
       </Content>
 
