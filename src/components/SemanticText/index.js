@@ -33,8 +33,13 @@ const Monospaced = styled.span`
 `
 
 const InterfaceProperty = styled.span`
-  color: #537;
-  border-bottom: 2px dotted #537;
+  color: darkviolet;
+  border-bottom: 2px dotted darkviolet;
+`
+
+const InterfaceOperation = styled.span`
+  color: forestgreen;
+  border-bottom: 2px dotted forestgreen;
 `
 
 const SemanticText = ({ variant, children }) => {
@@ -51,6 +56,8 @@ const SemanticText = ({ variant, children }) => {
       return <Monospaced>{children}</Monospaced>
     case "interface property":
       return <InterfaceProperty>{children}</InterfaceProperty>
+    case "interface operation":
+      return <InterfaceOperation>{children}</InterfaceOperation>
     default:
       throw new Error(`Unknown <SemanticText> variant "${variant}"!`)
   }

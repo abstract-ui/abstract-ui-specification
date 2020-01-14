@@ -6,6 +6,12 @@ import BreadcrumbsBar from "components/BreadcrumbsBar"
 import Content from "components/Content"
 import CenteredColumn from "components/CenteredColumn"
 import TitleBar from "components/TitleBar"
+
+import ContentLayout from "components/ContentLayout"
+import PageBody from "components/PageBody"
+import PageToC from "components/PageToC"
+import PageSidebar from "components/PageSidebar"
+
 import HorizontalDivider from "components/HorizontalDivider"
 import H1 from "components/H1"
 import H2 from "components/H2"
@@ -19,7 +25,7 @@ const Project = () => {
   return (
     <>
       <Helmet>
-        <title>Abstract UI - "Project" interface</title>
+        <title>Project interface &mdash; Abstract UI</title>
       </Helmet>
 
       <Header>
@@ -50,80 +56,113 @@ const Project = () => {
             <span style={{ color: "darkblue" }}>
               <Link to="/">Interfaces</Link>
               &nbsp;&nbsp;<strong>&rsaquo;</strong>&nbsp;&nbsp;
-              <Link to="/">Project</Link>
+              <Link to="/">interface Project</Link>
             </span>
           </CenteredColumn>
         </BreadcrumbsBar>
 
         <CenteredColumn>
-          <P>The Project interface represents an Abstract UI project.</P>
+          <ContentLayout>
+            <PageBody>
+              <H2>Overview</H2>
+              <P>The Project interface represents an Abstract UI project.</P>
 
-          <HorizontalDivider />
+              <HorizontalDivider />
 
-          <H2>Properties</H2>
-          <H3>
-            <SemanticText variant="interface property">
-              &rarr; name
-            </SemanticText>
-          </H3>
-          <P>
-            <SemanticText variant="data type">
-              <Link to="/">&lt;string&gt;</Link>
-            </SemanticText>
-          </P>
-          <P>The name of the project.</P>
+              <H2>
+                <Link
+                  to="/interfaces/interface-Project#properties"
+                  name="properties"
+                >
+                  Properties
+                </Link>
+              </H2>
 
-          <H3>
-            <SemanticText variant="interface property">
-              &rarr; description
-            </SemanticText>
-          </H3>
-          <P>
-            <SemanticText variant="data type">&lt;string&gt;</SemanticText>
-          </P>
-          <P>The description of the project.</P>
+              <H3>
+                <SemanticText variant="interface property">
+                  &rarr; name
+                </SemanticText>
+              </H3>
+              <P>
+                <SemanticText variant="data type">
+                  <Link to="/">&lt;string&gt;</Link>
+                </SemanticText>
+              </P>
+              <P>The name of the project.</P>
 
-          <H3>
-            <SemanticText variant="interface property">
-              &rarr; user interfaces
-            </SemanticText>
-          </H3>
-          <P>
-            <SemanticText variant="monospaced">
-              [<SemanticText variant="primitive">UserInterface</SemanticText>]
-            </SemanticText>
-          </P>
-          <P>A list of user interfaces.</P>
+              <H3>
+                <SemanticText variant="interface property">
+                  &rarr; description
+                </SemanticText>
+              </H3>
+              <P>
+                <SemanticText variant="data type">&lt;string&gt;</SemanticText>
+              </P>
+              <P>The description of the project.</P>
 
-          <H3>
-            <SemanticText variant="interface property">
-              &rarr; tokens
-            </SemanticText>
-          </H3>
-          <P>
-            <SemanticText variant="monospaced">
-              [
-              <SemanticText variant="primitive">
-                <Link to="/">Token</Link>
-              </SemanticText>
-              ]
-            </SemanticText>
-          </P>
-          <P>A list of tokens.</P>
+              <H3>
+                <SemanticText variant="interface property">
+                  &rarr; user interfaces
+                </SemanticText>
+              </H3>
+              <P>
+                <SemanticText variant="monospaced">
+                  [
+                  <SemanticText variant="primitive">UserInterface</SemanticText>
+                  ]
+                </SemanticText>
+              </P>
+              <P>A list of user interfaces.</P>
 
-          <HorizontalDivider />
+              <H3>
+                <SemanticText variant="interface property">
+                  &rarr; tokens
+                </SemanticText>
+              </H3>
+              <P>
+                <SemanticText variant="monospaced">
+                  [
+                  <SemanticText variant="primitive">
+                    <Link to="/">Token</Link>
+                  </SemanticText>
+                  ]
+                </SemanticText>
+              </P>
+              <P>A list of tokens.</P>
 
-          <H2>Ancestry</H2>
-          <P>
-            <em>none</em>
-          </P>
+              <H2>Operations</H2>
 
-          <HorizontalDivider />
+              <H3>
+                <SemanticText variant="interface operation">
+                  set name
+                </SemanticText>
+              </H3>
+              <P>Set the project name.</P>
 
-          <H2>Stability</H2>
-          <P>
-            <StabilityRating level={1} />
-          </P>
+              <H3>
+                <SemanticText variant="interface operation">
+                  set description
+                </SemanticText>
+              </H3>
+              <P>Set the project description.</P>
+
+              <HorizontalDivider />
+
+              <H2>Ancestry</H2>
+              <P>
+                <em>none</em>
+              </P>
+
+              <HorizontalDivider />
+
+              <H2>Stability</H2>
+              <P>
+                <StabilityRating level={1} />
+              </P>
+            </PageBody>
+            <PageToC>ToC</PageToC>
+            <PageSidebar>Side</PageSidebar>
+          </ContentLayout>
         </CenteredColumn>
       </Content>
 

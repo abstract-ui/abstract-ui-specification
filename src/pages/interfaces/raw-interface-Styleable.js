@@ -1,7 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import Header from "components/Header"
-import Footer from "components/Footer"
 import BreadcrumbsBar from "components/BreadcrumbsBar"
 import Content from "components/Content"
 import CenteredColumn from "components/CenteredColumn"
@@ -19,7 +18,7 @@ const rawStyleable = () => {
   return (
     <>
       <Helmet>
-        <title>Abstract UI - raw "Styleable" interface</title>
+        <title>Styleable interface &mdash; Abstract UI</title>
       </Helmet>
 
       <Header>

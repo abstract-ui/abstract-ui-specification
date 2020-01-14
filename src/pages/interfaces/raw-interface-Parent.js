@@ -14,7 +14,7 @@ const rawParent = () => {
   return (
     <>
       <Helmet>
-        <title>Abstract UI - raw "Parent" interface</title>
+        <title>Parent raw interface &mdash; Abstract UI</title>
       </Helmet>
 
       <Header />

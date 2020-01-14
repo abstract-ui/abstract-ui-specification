@@ -13,7 +13,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Abstract UI - Home</title>
+        <title>Abstract UI Home</title>
       </Helmet>
 
       <Header>
