@@ -6,6 +6,8 @@ const StyledGatsbyLink = styled(GatsbyLink)`
   color: inherit;
   text-decoration: none;
   :hover {
+    color: blue;
+    background-color: yellow;
     text-decoration: underline;
   }
 `

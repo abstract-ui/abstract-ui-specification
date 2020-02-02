@@ -16,6 +16,7 @@ import HorizontalDivider from "components/HorizontalDivider"
 import H1 from "components/H1"
 import H2 from "components/H2"
 import H3 from "components/H3"
+import H4 from "components/H4"
 import P from "components/P"
 import SemanticText from "components/SemanticText"
 import StabilityRating from "components/StabilityRating"
@@ -65,29 +66,34 @@ const Project = () => {
           <ContentLayout>
             <PageBody>
               <H2>Overview</H2>
-              <P>The Project interface represents an Abstract UI project.</P>
+              <P>An Abstract UI Project.</P>
 
               <HorizontalDivider />
 
               <H2>
                 <Link
-                  to="/interfaces/interface-Project#properties"
-                  name="properties"
+                  to="/interfaces/interface-Project#attributes"
+                  name="attributes"
                 >
-                  Properties
+                  Attributes
                 </Link>
               </H2>
 
               <H3>
                 <SemanticText variant="interface property">
-                  &rarr; name
+                  <Link
+                    to="/interfaces/interface-Project#attributes/name"
+                    name="attributes/name"
+                  >
+                    &rarr; name
+                  </Link>
                 </SemanticText>
               </H3>
-              <P>
+              {/* <P>
                 <SemanticText variant="data type">
                   <Link to="/">&lt;string&gt;</Link>
                 </SemanticText>
-              </P>
+              </P> */}
               <P>The name of the project.</P>
 
               <H3>
@@ -95,9 +101,9 @@ const Project = () => {
                   &rarr; description
                 </SemanticText>
               </H3>
-              <P>
+              {/* <P>
                 <SemanticText variant="data type">&lt;string&gt;</SemanticText>
-              </P>
+              </P> */}
               <P>The description of the project.</P>
 
               <H3>
@@ -105,13 +111,13 @@ const Project = () => {
                   &rarr; user interfaces
                 </SemanticText>
               </H3>
-              <P>
+              {/* <P>
                 <SemanticText variant="monospaced">
                   [
                   <SemanticText variant="primitive">UserInterface</SemanticText>
                   ]
                 </SemanticText>
-              </P>
+              </P> */}
               <P>A list of user interfaces.</P>
 
               <H3>
@@ -119,7 +125,7 @@ const Project = () => {
                   &rarr; tokens
                 </SemanticText>
               </H3>
-              <P>
+              {/* <P>
                 <SemanticText variant="monospaced">
                   [
                   <SemanticText variant="primitive">
@@ -127,24 +133,55 @@ const Project = () => {
                   </SemanticText>
                   ]
                 </SemanticText>
-              </P>
+              </P> */}
               <P>A list of tokens.</P>
 
               <H2>Operations</H2>
 
               <H3>
                 <SemanticText variant="interface operation">
-                  set name
+                  &#8285; set name
                 </SemanticText>
               </H3>
-              <P>Set the project name.</P>
+              <P>
+                Sets the project's name. See{" "}
+                <SemanticText variant="interface property">
+                  <Link to="/interfaces/interface-Project#attributes/name">
+                    &rarr; name
+                  </Link>
+                </SemanticText>
+                .
+              </P>
 
               <H3>
                 <SemanticText variant="interface operation">
-                  set description
+                  &#8285; set description
                 </SemanticText>
               </H3>
-              <P>Set the project description.</P>
+              <P>
+                Sets the project's description. See{" "}
+                <SemanticText variant="interface property">
+                  &rarr; description
+                </SemanticText>
+                .
+              </P>
+
+              <H3>
+                <SemanticText variant="interface operation">
+                  &#8285; append token
+                </SemanticText>
+              </H3>
+              <P>
+                Adds a new{" "}
+                <SemanticText variant="primitive">
+                  <Link to="/">Token</Link>
+                </SemanticText>{" "}
+                to the end of the project's list of tokens. See{" "}
+                <SemanticText variant="interface property">
+                  &rarr; tokens
+                </SemanticText>
+                .
+              </P>
 
               <HorizontalDivider />
 
