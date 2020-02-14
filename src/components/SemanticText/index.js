@@ -21,8 +21,8 @@ const Stability = styled.span`
 const Primitive = styled.span`
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
-  color: #224;
-  background-color: #dde;
+  color: white;
+  background-color: palevioletred;
   border-radius: 2px;
   padding: 0 3px;
 `
@@ -34,12 +34,12 @@ const Monospaced = styled.span`
 
 const InterfaceProperty = styled.span`
   color: darkviolet;
-  border-bottom: 2px dotted darkviolet;
+  ${"" /* border-bottom: 2px dotted darkviolet; */}
 `
 
 const InterfaceOperation = styled.span`
   color: forestgreen;
-  border-bottom: 2px dotted forestgreen;
+  ${"" /* border-bottom: 2px dotted forestgreen; */}
 `
 
 const SemanticText = ({ variant, children }) => {

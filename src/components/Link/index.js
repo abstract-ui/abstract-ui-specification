@@ -10,6 +10,11 @@ const StyledGatsbyLink = styled(GatsbyLink)`
     background-color: yellow;
     text-decoration: underline;
   }
+  :active {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+  }
 `
 
 const Link = ({ children, ...otherProps }) => {

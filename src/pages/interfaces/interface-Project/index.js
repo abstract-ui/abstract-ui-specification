@@ -47,7 +47,7 @@ const Project = () => {
         <TitleBar>
           <CenteredColumn>
             <H1>
-              <SemanticText variant="interface">interface</SemanticText> Project
+              interface <SemanticText variant="interface">Project</SemanticText>
             </H1>
           </CenteredColumn>
         </TitleBar>
@@ -81,10 +81,7 @@ const Project = () => {
 
               <H3>
                 <SemanticText variant="interface property">
-                  <Link
-                    to="/interfaces/interface-Project#attributes/name"
-                    name="attributes/name"
-                  >
+                  <Link to="/interfaces/interface-Project/attributes/name">
                     &rarr; name
                   </Link>
                 </SemanticText>
@@ -168,7 +165,9 @@ const Project = () => {
 
               <H3>
                 <SemanticText variant="interface operation">
-                  &#8285; append token
+                  <Link to="/interfaces/interface-Project/operations/append-token">
+                    &#8285; append token
+                  </Link>
                 </SemanticText>
               </H3>
               <P>
