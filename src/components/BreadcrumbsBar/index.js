@@ -2,7 +2,8 @@ import styled from "@emotion/styled"
 
 const BreadcrumbsBar = styled.div`
   padding: 15px;
-  border-bottom: 1px dotted #e3e3e3;
+  background-color: #161616;
+  border-bottom: 1px solid #333;
   margin-block-end: 2em;
 `
 

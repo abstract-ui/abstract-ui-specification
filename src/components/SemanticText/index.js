@@ -2,7 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 
 const Interface = styled.span`
-  color: palevioletred;
+  color: #cc6677;
 `
 
 const DataType = styled.span`
@@ -33,12 +33,14 @@ const Monospaced = styled.span`
 `
 
 const InterfaceProperty = styled.span`
-  color: darkviolet;
+  color: lightgreen;
+  text-shadow: 0 2px 1px hsla(0, 0%, 0%, 50%);
   ${"" /* border-bottom: 2px dotted darkviolet; */}
 `
 
 const InterfaceOperation = styled.span`
-  color: forestgreen;
+  color: deepskyblue;
+  text-shadow: 0 2px 1px hsla(0, 0%, 0%, 50%);
   ${"" /* border-bottom: 2px dotted forestgreen; */}
 `
 

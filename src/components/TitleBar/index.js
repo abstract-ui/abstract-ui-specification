@@ -1,9 +1,9 @@
 import styled from "@emotion/styled"
 
 const TitleBar = styled.div`
-  padding: 10px 0;
-  background-color: #f9f9f9;
-  border-bottom: 1px dashed #e3e3e3;
+  padding: 1rem 0;
+  background-color: #1f1f1f;
+  border-bottom: 1px solid #333;
 `
 
 export default TitleBar

@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 
 const CenteredColumn = styled.div`
-  max-width: 60vw;
+  max-width: 50rem;
   margin: 0 auto;
 `
 
