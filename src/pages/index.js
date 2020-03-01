@@ -27,7 +27,24 @@ const Index = () => {
 
         <CenteredColumn>
           <ContentSection>
-            <Link to="/interfaces">Interfaces</Link>
+            <p>
+              Abstract UI is a domain-specific modelling language that describes
+              graphical user interfaces. Conceptually, a complete, well-formed
+              Abstract UI "document" is a graph, every node of which is a
+              semantically meaningful object referred to as an{" "}
+              <em>Abstract UI primitive</em>.
+            </p>
+            <p>
+              In Abstract UI, primitives are abstractions of graphical user
+              interface concepts such as visual elements, styling, layout,
+              animations, behavior, data manipulation and data fetching, as well
+              as design concepts such as components, tokens and other elements
+              of design systems.
+            </p>
+            <p>
+              Abstract UI primitives are described using{" "}
+              <Link to="/interfaces">interfaces</Link>.
+            </p>
           </ContentSection>
         </CenteredColumn>
       </main>

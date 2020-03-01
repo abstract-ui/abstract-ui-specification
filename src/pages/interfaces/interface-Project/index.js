@@ -8,7 +8,7 @@ import ContentSection from "components/ContentSection"
 import Text from "components/Text"
 import Link from "components/Link"
 
-const InterfaceProject = () => {
+const Page = () => {
   return (
     <>
       <DocumentTitle title="Project interface &mdash; Abstract UI" />
@@ -39,7 +39,7 @@ const InterfaceProject = () => {
         <CenteredColumn>
           <ContentSection>
             <h2>Overview</h2>
-            <p>Project primitives represent Abstract UI projects.</p>
+            <p>A Project primitive represents an Abstract UI project.</p>
           </ContentSection>
 
           <hr />
@@ -62,7 +62,10 @@ const InterfaceProject = () => {
             </h3>
             <p>
               A list of{" "}
-              <Link to="/" variant="primitive-name">
+              <Link
+                to="/interfaces/interface-UserInterface"
+                variant="primitive-name"
+              >
                 UserInterfaces
               </Link>
               .
@@ -73,7 +76,7 @@ const InterfaceProject = () => {
             </h3>
             <p>
               A list of{" "}
-              <Link to="/" variant="primitive-name">
+              <Link to="/interfaces/interface-Token" variant="primitive-name">
                 Tokens
               </Link>
               .
@@ -100,7 +103,7 @@ const InterfaceProject = () => {
             </h3>
             <p>
               Adds a new{" "}
-              <Link to="/" variant="primitive-name">
+              <Link to="/interfaces/interface-Token" variant="primitive-name">
                 Token
               </Link>{" "}
               to the end of the project's list of tokens.
@@ -108,9 +111,8 @@ const InterfaceProject = () => {
           </ContentSection>
         </CenteredColumn>
       </main>
-      <footer></footer>
     </>
   )
 }
 
-export default InterfaceProject
+export default Page
