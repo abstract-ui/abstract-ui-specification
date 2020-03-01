@@ -1,5 +1,5 @@
 import React from "react"
-import SemanticText from "components/SemanticText"
+import Text from "components/Text"
 
 const StabilityRating = ({ level }) => {
   const fullPips = []
@@ -15,12 +15,12 @@ const StabilityRating = ({ level }) => {
 
   return (
     <span style={{ fontSize: "1.5em" }}>
-      <SemanticText variant="monospaced">
+      <Text variant="monospaced">
         {fullPips}
         {level < 6 && level}
         {emptyPips}
         {level === 6 && "✔"}
-      </SemanticText>
+      </Text>
     </span>
   )
 }

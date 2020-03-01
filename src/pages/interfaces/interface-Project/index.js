@@ -1,188 +1,116 @@
 import React from "react"
-import { Helmet } from "react-helmet"
-import Primitive from "components/Primitive"
-import Header from "components/Header"
-import Footer from "components/Footer"
-import BreadcrumbsBar from "components/BreadcrumbsBar"
-import Content from "components/Content"
-import CenteredColumn from "components/CenteredColumn"
+import DocumentTitle from "components/DocumentTitle"
 import TitleBar from "components/TitleBar"
-
-import ContentLayout from "components/ContentLayout"
-import PageBody from "components/PageBody"
-import PageToC from "components/PageToC"
-import PageSidebar from "components/PageSidebar"
-
-import H1 from "components/H1"
-import H2 from "components/H2"
-import H3 from "components/H3"
-import H4 from "components/H4"
-import P from "components/P"
-import SemanticText from "components/SemanticText"
-import StabilityRating from "components/StabilityRating"
+import Logo from "components/Logo"
+import BreadcrumbsBar from "components/BreadcrumbsBar"
+import CenteredColumn from "components/CenteredColumn"
+import ContentSection from "components/ContentSection"
+import Text from "components/Text"
 import Link from "components/Link"
 
-const Project = () => {
+const InterfaceProject = () => {
   return (
     <>
-      <Helmet>
-        <title>Project interface &mdash; Abstract UI</title>
-      </Helmet>
+      <DocumentTitle title="Project interface &mdash; Abstract UI" />
 
-      <Header>
+      <header>
         <CenteredColumn>
-          <span
-            style={{
-              fontSize: "1.2rem",
-              fontWeight: 700,
-              color: "#fff",
-            }}
-          >
-            Abstract UI
-          </span>
+          <Logo />
         </CenteredColumn>
-      </Header>
+      </header>
 
-      <Content>
+      <main>
         <TitleBar>
           <CenteredColumn>
-            <H1>
-              interface <SemanticText variant="interface">Project</SemanticText>
-            </H1>
+            <h1>
+              interface <Text variant="interface-name">Project</Text>
+            </h1>
           </CenteredColumn>
         </TitleBar>
 
         <BreadcrumbsBar>
           <CenteredColumn>
-            <span>
-              <Link to="/">Interfaces</Link>
-              &nbsp;&nbsp;<strong>&rsaquo;</strong>&nbsp;&nbsp;
-              <Link to="/">interface Project</Link>
-            </span>
+            <Link to="/interfaces">Interfaces</Link>
+            &nbsp;&nbsp;<strong>&raquo;</strong>&nbsp;&nbsp;
+            <Link to="/interfaces/interface-Project">interface Project</Link>
           </CenteredColumn>
         </BreadcrumbsBar>
 
         <CenteredColumn>
-          <H2>Overview</H2>
-          <P>An Abstract UI Project.</P>
+          <ContentSection>
+            <h2>Overview</h2>
+            <p>Project primitives represent Abstract UI projects.</p>
+          </ContentSection>
 
           <hr />
 
-          <H2>Attributes</H2>
+          <ContentSection>
+            <h2>Attributes</h2>
 
-          <H3>
-            <SemanticText variant="interface property">
-              &rarr; name
-            </SemanticText>
-          </H3>
-          {/* <P>
-                <SemanticText variant="data type">
-                  <Link to="/">&lt;string&gt;</Link>
-                </SemanticText>
-              </P> */}
-          <P>The name of the project.</P>
+            <h3>
+              <Text variant="interface-attribute-name">name</Text>
+            </h3>
+            <p>The name of the project.</p>
 
-          <H3>
-            <SemanticText variant="interface property">
-              &rarr; description
-            </SemanticText>
-          </H3>
-          {/* <P>
-                <SemanticText variant="data type">&lt;string&gt;</SemanticText>
-              </P> */}
-          <P>The description of the project.</P>
+            <h3>
+              <Text variant="interface-attribute-name">description</Text>
+            </h3>
+            <p>The description of the project.</p>
 
-          <H3>
-            <SemanticText variant="interface property">
-              &rarr; user interfaces
-            </SemanticText>
-          </H3>
-          {/* <P>
-                <SemanticText variant="monospaced">
-                  [
-                  <SemanticText variant="primitive">UserInterface</SemanticText>
-                  ]
-                </SemanticText>
-              </P> */}
-          <P>
-            A list of{" "}
-            <Link to="/" variant="primitive">
-              UserInterfaces
-            </Link>
-            .
-          </P>
+            <h3>
+              <Text variant="interface-attribute-name">user interfaces</Text>
+            </h3>
+            <p>
+              A list of{" "}
+              <Link to="/" variant="primitive-name">
+                UserInterfaces
+              </Link>
+              .
+            </p>
 
-          <H3>
-            <SemanticText variant="interface property">
-              &rarr; tokens
-            </SemanticText>
-          </H3>
-          {/* <P>
-                <SemanticText variant="monospaced">
-                  [
-                  <SemanticText variant="primitive">
-                    <Link to="/">Token</Link>
-                  </SemanticText>
-                  ]
-                </SemanticText>
-              </P> */}
-          <P>
-            A list of{" "}
-            <Link to="/" variant="primitive">
-              Tokens
-            </Link>
-            .
-          </P>
+            <h3>
+              <Text variant="interface-attribute-name">tokens</Text>
+            </h3>
+            <p>
+              A list of{" "}
+              <Link to="/" variant="primitive-name">
+                Tokens
+              </Link>
+              .
+            </p>
+          </ContentSection>
 
           <hr />
 
-          <H2>Operations</H2>
+          <ContentSection>
+            <h2>Operations</h2>
 
-          <H3>
-            <SemanticText variant="interface operation">
-              &#8285; set name
-            </SemanticText>
-          </H3>
-          <P>Sets the project's name.</P>
+            <h3>
+              <Text variant="interface-operation-name">set name</Text>
+            </h3>
+            <p>Sets the project's name.</p>
 
-          <H3>
-            <SemanticText variant="interface operation">
-              &#8285; set description
-            </SemanticText>
-          </H3>
-          <P>Sets the project's description.</P>
+            <h3>
+              <Text variant="interface-operation-name">set description</Text>
+            </h3>
+            <p>Sets the project's description.</p>
 
-          <H3>
-            <SemanticText variant="interface operation">
-              &#8285; append token
-            </SemanticText>
-          </H3>
-          <P>
-            Adds a new{" "}
-            <Link to="/" variant="primitive">
-              Token
-            </Link>{" "}
-            to the end of the project's list of tokens.
-          </P>
-
-          {/* <hr />
-
-              <H2>Ancestry</H2>
-              <P>
-                <em>none</em>
-              </P>
-
-              <hr />
-
-              <H2>Stability</H2>
-              <P>
-                <StabilityRating level={1} />
-              </P> */}
+            <h3>
+              <Text variant="interface-operation-name">append token</Text>
+            </h3>
+            <p>
+              Adds a new{" "}
+              <Link to="/" variant="primitive-name">
+                Token
+              </Link>{" "}
+              to the end of the project's list of tokens.
+            </p>
+          </ContentSection>
         </CenteredColumn>
-      </Content>
-      <Footer />
+      </main>
+      <footer></footer>
     </>
   )
 }
 
-export default Project
+export default InterfaceProject

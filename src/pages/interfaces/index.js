@@ -1,16 +1,16 @@
-import "../base.css"
 import React from "react"
 import DocumentTitle from "components/DocumentTitle"
 import TitleBar from "components/TitleBar"
 import Logo from "components/Logo"
+import BreadcrumbsBar from "components/BreadcrumbsBar"
 import CenteredColumn from "components/CenteredColumn"
 import ContentSection from "components/ContentSection"
 import Link from "components/Link"
 
-const Index = () => {
+const Interfaces = () => {
   return (
     <>
-      <DocumentTitle title="Abstract UI Home" />
+      <DocumentTitle title="Interfaces &mdash; Abstract UI" />
 
       <header>
         <CenteredColumn>
@@ -21,13 +21,19 @@ const Index = () => {
       <main>
         <TitleBar>
           <CenteredColumn>
-            <h1>Abstract UI Home</h1>
+            <h1>Interfaces</h1>
           </CenteredColumn>
         </TitleBar>
 
+        <BreadcrumbsBar>
+          <CenteredColumn>
+            <Link to="/interfaces">Interfaces</Link>
+          </CenteredColumn>
+        </BreadcrumbsBar>
+
         <CenteredColumn>
           <ContentSection>
-            <Link to="/interfaces">Interfaces</Link>
+            <Link to="/interfaces/interface-Project/">interface Project</Link>
           </ContentSection>
         </CenteredColumn>
       </main>
@@ -35,4 +41,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default Interfaces

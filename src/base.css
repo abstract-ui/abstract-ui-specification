@@ -14,11 +14,39 @@ body {
   box-sizing: border-box;
 }
 
+header {
+  padding: 1rem 0;
+  background-color: #0c0c0c;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+}
+
+footer {
+  height: 300px;
+  margin-block-start: 5rem;
+  background-color: #111;
+}
+
+section.content-section {
+  margin: 3rem 0;
+}
+
 hr {
   border: none;
   height: 1px;
   background-color: #333;
   margin: 4rem 0;
+}
+
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #444;
 }
 
 h2 {
@@ -28,12 +56,19 @@ h2 {
   color: #ddd;
 }
 
+h3 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
 .link {
   color: cyan;
   text-decoration: none;
 }
 
 .link:hover {
+  color: darkcyan;
   text-decoration: underline;
 }
 
@@ -48,7 +83,21 @@ h2 {
   background-color: black;
 }
 
-.primitive {
+.text-variant-interface-name {
+  color: #cc6677;
+}
+
+.text-variant-interface-attribute-name {
+  color: lightgreen;
+  text-shadow: 0 2px 1px hsla(0, 0%, 0%, 50%);
+}
+
+.text-variant-interface-operation-name {
+  color: deepskyblue;
+  text-shadow: 0 2px 1px hsla(0, 0%, 0%, 50%);
+}
+
+.text-variant-primitive-name {
   font-family: "Roboto Mono", monospace;
   color: white;
   background-color: #cc6677;

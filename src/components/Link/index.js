@@ -10,7 +10,7 @@ const Link = ({ children, variant, ...otherProps }) => {
           link: true,
           variant: Boolean(variant),
         },
-        variant
+        variant && `text-variant-${variant}`
       )}
       {...otherProps}
     >
