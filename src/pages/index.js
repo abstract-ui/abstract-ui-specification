@@ -1,4 +1,3 @@
-import "../base.css"
 import React from "react"
 import DocumentTitle from "components/DocumentTitle"
 import TitleBar from "components/TitleBar"
