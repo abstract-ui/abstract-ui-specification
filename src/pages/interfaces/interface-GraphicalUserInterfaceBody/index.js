@@ -11,7 +11,7 @@ import Link from "components/Link"
 const Page = () => {
   return (
     <>
-      <DocumentTitle title="UserInterface interface &mdash; Abstract UI" />
+      <DocumentTitle title="GraphicalUserInterfaceBody interface &mdash; Abstract UI" />
 
       <header>
         <CenteredColumn>
@@ -23,7 +23,8 @@ const Page = () => {
         <TitleBar>
           <CenteredColumn>
             <h1>
-              interface <Text variant="interface-name">UserInterface</Text>
+              interface{" "}
+              <Text variant="interface-name">GraphicalUserInterfaceBody</Text>
             </h1>
           </CenteredColumn>
         </TitleBar>
@@ -32,8 +33,8 @@ const Page = () => {
           <CenteredColumn>
             <Link to="/interfaces">Interfaces</Link>
             &nbsp;&nbsp;<strong>&raquo;</strong>&nbsp;&nbsp;
-            <Link to="/interfaces/interface-UserInterface">
-              interface UserInterface
+            <Link to="/interfaces/interface-GraphicalUserInterfaceBody">
+              interface GraphicalUserInterfaceBody
             </Link>
           </CenteredColumn>
         </BreadcrumbsBar>
@@ -41,36 +42,18 @@ const Page = () => {
         <CenteredColumn>
           <ContentSection>
             <h2>Overview</h2>
-            <p>QQQ</p>
-          </ContentSection>
-
-          <hr />
-
-          <ContentSection>
-            <h2>Attributes</h2>
-
-            <h3>
-              <Text variant="interface-attribute-name">name</Text>
-            </h3>
-            <p>The name of the user interface.</p>
-
-            <h3>
-              <Text variant="interface-attribute-name">description</Text>
-            </h3>
-            <p>The description of the user interface.</p>
-
-            <h3>
-              <Text variant="interface-attribute-name">body</Text>
-            </h3>
             <p>
-              A{" "}
+              A GraphicalUserInterfaceBody primitive represents a container for
+              the element graph of a graphical user interface.
+            </p>
+            <p>
+              Inerits:{" "}
               <Link
-                to="/interfaces/interface-UserInterfaceBody"
+                to="/interfaces/raw-interface-Parent"
                 variant="primitive-name"
               >
-                UserInterfaceBody
+                Parent
               </Link>
-              .
             </p>
           </ContentSection>
         </CenteredColumn>

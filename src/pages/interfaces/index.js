@@ -38,15 +38,17 @@ const Interfaces = () => {
             <br />
             <Link to="/interfaces/interface-Project">interface Project</Link>
             <br />
-            <Link to="/interfaces/interface-UserInterface">
-              interface UserInterface
+            <Link to="/interfaces/interface-GraphicalUserInterface">
+              interface GraphicalUserInterface
             </Link>
             <br />
-            <Link to="/interfaces/interface-UserInterfaceBody">
-              interface UserInterfaceBody
+            <Link to="/interfaces/interface-GraphicalUserInterfaceBody">
+              interface GraphicalUserInterfaceBody
             </Link>
             <br />
-            <Link to="/interfaces/interface-Area">interface Area</Link>
+            <Link to="/interfaces/interface-RectangularArea">
+              interface RectangularArea
+            </Link>
             <br />
             <Link to="/interfaces/interface-Text">interface Text</Link>
             <br />
@@ -56,8 +58,8 @@ const Interfaces = () => {
             <br />
             <Link to="/interfaces/interface-Token">interface Token</Link>
             <br />
-            <Link to="/interfaces/interface-ComponentDefinition">
-              interface ComponentDefinition
+            <Link to="/interfaces/interface-Component">
+              interface Component
             </Link>
             <br />
             <Link to="/interfaces/interface-PropDefinition">

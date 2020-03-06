@@ -41,7 +41,16 @@ const Page = () => {
         <CenteredColumn>
           <ContentSection>
             <h2>Overview</h2>
-            <p>QQQ</p>
+            <p>
+              A StyleProperty primitive represents a declaration of style for a{" "}
+              <Link
+                variant="primitive-name"
+                to="/interfaces/interface-Styleable"
+              >
+                Styleable
+              </Link>{" "}
+              primitive.
+            </p>
           </ContentSection>
 
           <hr />

@@ -11,7 +11,7 @@ import Link from "components/Link"
 const Page = () => {
   return (
     <>
-      <DocumentTitle title="UserInterfaceBody interface &mdash; Abstract UI" />
+      <DocumentTitle title="Component interface &mdash; Abstract UI" />
 
       <header>
         <CenteredColumn>
@@ -23,7 +23,7 @@ const Page = () => {
         <TitleBar>
           <CenteredColumn>
             <h1>
-              interface <Text variant="interface-name">UserInterfaceBody</Text>
+              interface <Text variant="interface-name">Component</Text>
             </h1>
           </CenteredColumn>
         </TitleBar>
@@ -32,8 +32,8 @@ const Page = () => {
           <CenteredColumn>
             <Link to="/interfaces">Interfaces</Link>
             &nbsp;&nbsp;<strong>&raquo;</strong>&nbsp;&nbsp;
-            <Link to="/interfaces/interface-UserInterfaceBody">
-              interface UserInterfaceBody
+            <Link to="/interfaces/interface-Component">
+              interface Component
             </Link>
           </CenteredColumn>
         </BreadcrumbsBar>
@@ -42,15 +42,17 @@ const Page = () => {
           <ContentSection>
             <h2>Overview</h2>
             <p>QQQ</p>
-            <p>
-              Inerits:{" "}
-              <Link
-                to="/interfaces/raw-interface-Parent"
-                variant="primitive-name"
-              >
-                Parent
-              </Link>
-            </p>
+          </ContentSection>
+
+          <hr />
+
+          <ContentSection>
+            <h2>Attributes</h2>
+
+            <h3>
+              <Text variant="interface-attribute-name">xxx</Text>
+            </h3>
+            <p>xxx</p>
           </ContentSection>
         </CenteredColumn>
       </main>

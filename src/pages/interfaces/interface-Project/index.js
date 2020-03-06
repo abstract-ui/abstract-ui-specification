@@ -39,7 +39,11 @@ const Page = () => {
         <CenteredColumn>
           <ContentSection>
             <h2>Overview</h2>
-            <p>A Project primitive represents an Abstract UI project.</p>
+            <p>
+              A Project primitive represents an Abstract UI project. Projects
+              serve as containers for graphical user interfaces as well as
+              design system elements.
+            </p>
           </ContentSection>
 
           <hr />

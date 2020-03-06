@@ -11,7 +11,7 @@ import Link from "components/Link"
 const Page = () => {
   return (
     <>
-      <DocumentTitle title="ComponentDefinition interface &mdash; Abstract UI" />
+      <DocumentTitle title="RectangularArea interface &mdash; Abstract UI" />
 
       <header>
         <CenteredColumn>
@@ -23,8 +23,7 @@ const Page = () => {
         <TitleBar>
           <CenteredColumn>
             <h1>
-              interface{" "}
-              <Text variant="interface-name">ComponentDefinition</Text>
+              interface <Text variant="interface-name">RectangularArea</Text>
             </h1>
           </CenteredColumn>
         </TitleBar>
@@ -33,8 +32,8 @@ const Page = () => {
           <CenteredColumn>
             <Link to="/interfaces">Interfaces</Link>
             &nbsp;&nbsp;<strong>&raquo;</strong>&nbsp;&nbsp;
-            <Link to="/interfaces/interface-ComponentDefinition">
-              interface ComponentDefinition
+            <Link to="/interfaces/interface-RectangularArea">
+              interface RectangularArea
             </Link>
           </CenteredColumn>
         </BreadcrumbsBar>
@@ -42,18 +41,19 @@ const Page = () => {
         <CenteredColumn>
           <ContentSection>
             <h2>Overview</h2>
-            <p>QQQ</p>
-          </ContentSection>
-
-          <hr />
-
-          <ContentSection>
-            <h2>Attributes</h2>
-
-            <h3>
-              <Text variant="interface-attribute-name">xxx</Text>
-            </h3>
-            <p>xxx</p>
+            <p>
+              A RectangularArea primitive represents a clearly delimited
+              rectangular space in a graphical user interface.
+            </p>
+            <p>
+              Inherits:{" "}
+              <Link
+                to="/interfaces/raw-interface-Element"
+                variant="primitive-name"
+              >
+                Element
+              </Link>
+            </p>
           </ContentSection>
         </CenteredColumn>
       </main>

@@ -41,7 +41,10 @@ const Page = () => {
         <CenteredColumn>
           <ContentSection>
             <h2>Overview</h2>
-            <p>QQQ</p>
+            <p>
+              A Component primitive represents a reusable element tree with a
+              well defined behavior.
+            </p>
           </ContentSection>
 
           <hr />
