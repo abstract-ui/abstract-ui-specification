@@ -38,37 +38,33 @@ const Interfaces = () => {
             <br />
             <Link to="/interfaces/interface-Project">interface Project</Link>
             <br />
-            <Link to="/interfaces/interface-UserInterface">
-              interface UserInterface
+            <Link to="/interfaces/interface-Graphical-User-Interface">
+              interface Graphical User Interface
             </Link>
             <br />
-            <Link to="/interfaces/interface-UserInterfaceBody">
-              interface UserInterfaceBody
+            <Link to="/interfaces/interface-Graphical-User-Interface-Body">
+              interface Graphical User Interface Body
             </Link>
             <br />
-            <Link to="/interfaces/interface-Area">interface Area</Link>
+            <Link to="/interfaces/interface-Rectangle">
+              interface Rectangle
+            </Link>
             <br />
             <Link to="/interfaces/interface-Text">interface Text</Link>
             <br />
-            <Link to="/interfaces/interface-StyleProperty">
-              interface StyleProperty
+            <Link to="/interfaces/interface-Style-Property">
+              interface Style Property
             </Link>
             <br />
             <Link to="/interfaces/interface-Token">interface Token</Link>
-            <br />
-            <Link to="/interfaces/interface-ComponentDefinition">
-              interface ComponentDefinition
-            </Link>
-            <br />
-            <Link to="/interfaces/interface-PropDefinition">
-              interface PropDefinition
-            </Link>
             <br />
             <Link to="/interfaces/interface-Component">
               interface Component
             </Link>
             <br />
-            <Link to="/interfaces/interface-Prop">interface Prop</Link>
+            <Link to="/interfaces/interface-Component-Instance">
+              interface Component Instance
+            </Link>
           </ContentSection>
           <ContentSection>
             <h2>Raw interfaces</h2>

@@ -39,7 +39,7 @@ const Page = () => {
         <CenteredColumn>
           <ContentSection>
             <h2>Overview</h2>
-            <p>QQQ</p>
+            <p>A Text primitive represents an individual unit of text.</p>
             <p>
               Inherits:{" "}
               <Link

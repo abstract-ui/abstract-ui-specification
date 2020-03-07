@@ -41,7 +41,11 @@ const Page = () => {
         <CenteredColumn>
           <ContentSection>
             <h2>Overview</h2>
-            <p>QQQ</p>
+            <p>
+              Styleable primitives are primitives that can be styled using style
+              properties. Every type of styleable primitive has their own list
+              of style properties they accept.
+            </p>
           </ContentSection>
 
           <hr />
@@ -50,7 +54,7 @@ const Page = () => {
             <h2>Attributes</h2>
 
             <h3>
-              <Text variant="interface-attribute-name">style</Text>
+              <Text variant="interface-attribute-name">style properties</Text>
             </h3>
             <p>
               A list of{" "}
@@ -58,7 +62,7 @@ const Page = () => {
                 to="/interfaces/interface-StyleProperty"
                 variant="primitive-name"
               >
-                StyleProperties
+                Style Properties
               </Link>
               .
             </p>

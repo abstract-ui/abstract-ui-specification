@@ -39,7 +39,12 @@ const Page = () => {
         <CenteredColumn>
           <ContentSection>
             <h2>Overview</h2>
-            <p>QQQ</p>
+            <p>
+              A Token primitive represents a container for a constant, reusable
+              literal value. Tokens are a highly versatile mechanism -
+              meaningful values that pervade a graphical user interface (such as
+              named colors) are best represented by tokens.
+            </p>
           </ContentSection>
 
           <hr />

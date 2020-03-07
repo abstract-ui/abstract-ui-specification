@@ -32,7 +32,7 @@ const Page = () => {
           <CenteredColumn>
             <Link to="/interfaces">Interfaces</Link>
             &nbsp;&nbsp;<strong>&raquo;</strong>&nbsp;&nbsp;
-            <Link to="/interfaces/interface-Project">interface Document</Link>
+            <Link to="/interfaces/interface-Document">interface Document</Link>
           </CenteredColumn>
         </BreadcrumbsBar>
 
@@ -40,9 +40,9 @@ const Page = () => {
           <ContentSection>
             <h2>Overview</h2>
             <p>
-              A Document represents the primary node in an Abstract UI graph and
-              serves as a carrier for critical metadata such as the Abstract UI
-              version implemented by graph.
+              A Document primitive represents the primary node in an Abstract UI
+              graph and serves as a carrier for critical metadata such as the
+              Abstract UI version implemented by graph.
             </p>
           </ContentSection>
 

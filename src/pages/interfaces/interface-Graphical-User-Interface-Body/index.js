@@ -11,7 +11,7 @@ import Link from "components/Link"
 const Page = () => {
   return (
     <>
-      <DocumentTitle title="Prop interface &mdash; Abstract UI" />
+      <DocumentTitle title="Graphical User Interface Body interface &mdash; Abstract UI" />
 
       <header>
         <CenteredColumn>
@@ -23,7 +23,10 @@ const Page = () => {
         <TitleBar>
           <CenteredColumn>
             <h1>
-              interface <Text variant="interface-name">Prop</Text>
+              interface{" "}
+              <Text variant="interface-name">
+                Graphical User Interface Body
+              </Text>
             </h1>
           </CenteredColumn>
         </TitleBar>
@@ -32,25 +35,28 @@ const Page = () => {
           <CenteredColumn>
             <Link to="/interfaces">Interfaces</Link>
             &nbsp;&nbsp;<strong>&raquo;</strong>&nbsp;&nbsp;
-            <Link to="/interfaces/interface-Prop">interface Prop</Link>
+            <Link to="/interfaces/interface-Graphical-User-Interface-Body">
+              interface Graphical User Interface Body
+            </Link>
           </CenteredColumn>
         </BreadcrumbsBar>
 
         <CenteredColumn>
           <ContentSection>
             <h2>Overview</h2>
-            <p>QQQ</p>
-          </ContentSection>
-
-          <hr />
-
-          <ContentSection>
-            <h2>Attributes</h2>
-
-            <h3>
-              <Text variant="interface-attribute-name">xxx</Text>
-            </h3>
-            <p>xxx</p>
+            <p>
+              A Graphical User Interface Body primitive represents a container
+              for the element tree of a graphical user interface.
+            </p>
+            <p>
+              Inerits:{" "}
+              <Link
+                to="/interfaces/raw-interface-Parent"
+                variant="primitive-name"
+              >
+                Parent
+              </Link>
+            </p>
           </ContentSection>
         </CenteredColumn>
       </main>
