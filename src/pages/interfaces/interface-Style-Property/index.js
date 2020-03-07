@@ -11,7 +11,7 @@ import Link from "components/Link"
 const Page = () => {
   return (
     <>
-      <DocumentTitle title="RectangularArea interface &mdash; Abstract UI" />
+      <DocumentTitle title="Style Property interface &mdash; Abstract UI" />
 
       <header>
         <CenteredColumn>
@@ -23,7 +23,7 @@ const Page = () => {
         <TitleBar>
           <CenteredColumn>
             <h1>
-              interface <Text variant="interface-name">RectangularArea</Text>
+              interface <Text variant="interface-name">Style Property</Text>
             </h1>
           </CenteredColumn>
         </TitleBar>
@@ -32,8 +32,8 @@ const Page = () => {
           <CenteredColumn>
             <Link to="/interfaces">Interfaces</Link>
             &nbsp;&nbsp;<strong>&raquo;</strong>&nbsp;&nbsp;
-            <Link to="/interfaces/interface-RectangularArea">
-              interface RectangularArea
+            <Link to="/interfaces/interface-Style-Property">
+              interface Style Property
             </Link>
           </CenteredColumn>
         </BreadcrumbsBar>
@@ -42,18 +42,31 @@ const Page = () => {
           <ContentSection>
             <h2>Overview</h2>
             <p>
-              A RectangularArea primitive represents a clearly delimited
-              rectangular space in a graphical user interface.
-            </p>
-            <p>
-              Inherits:{" "}
+              A Style Property primitive represents a declaration of style for a{" "}
               <Link
-                to="/interfaces/raw-interface-Element"
                 variant="primitive-name"
+                to="/interfaces/interface-Styleable"
               >
-                Element
-              </Link>
+                Styleable
+              </Link>{" "}
+              primitive.
             </p>
+          </ContentSection>
+
+          <hr />
+
+          <ContentSection>
+            <h2>Attributes</h2>
+
+            <h3>
+              <Text variant="interface-attribute-name">name</Text>
+            </h3>
+            <p>The name of the style property.</p>
+
+            <h3>
+              <Text variant="interface-attribute-name">value</Text>
+            </h3>
+            <p>The value of the style property.</p>
           </ContentSection>
         </CenteredColumn>
       </main>

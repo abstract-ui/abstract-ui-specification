@@ -11,7 +11,7 @@ import Link from "components/Link"
 const Page = () => {
   return (
     <>
-      <DocumentTitle title="Prop interface &mdash; Abstract UI" />
+      <DocumentTitle title="Graphical User Interface interface &mdash; Abstract UI" />
 
       <header>
         <CenteredColumn>
@@ -23,7 +23,8 @@ const Page = () => {
         <TitleBar>
           <CenteredColumn>
             <h1>
-              interface <Text variant="interface-name">Prop</Text>
+              interface{" "}
+              <Text variant="interface-name">Graphical User Interface</Text>
             </h1>
           </CenteredColumn>
         </TitleBar>
@@ -32,14 +33,19 @@ const Page = () => {
           <CenteredColumn>
             <Link to="/interfaces">Interfaces</Link>
             &nbsp;&nbsp;<strong>&raquo;</strong>&nbsp;&nbsp;
-            <Link to="/interfaces/interface-Prop">interface Prop</Link>
+            <Link to="/interfaces/interface-Graphical-User-Interface">
+              interface Graphical User Interface
+            </Link>
           </CenteredColumn>
         </BreadcrumbsBar>
 
         <CenteredColumn>
           <ContentSection>
             <h2>Overview</h2>
-            <p>QQQ</p>
+            <p>
+              A Graphical User Interface primitive represents a complete
+              graphical user interface.
+            </p>
           </ContentSection>
 
           <hr />
@@ -48,9 +54,28 @@ const Page = () => {
             <h2>Attributes</h2>
 
             <h3>
-              <Text variant="interface-attribute-name">xxx</Text>
+              <Text variant="interface-attribute-name">name</Text>
             </h3>
-            <p>xxx</p>
+            <p>The name of the user interface.</p>
+
+            <h3>
+              <Text variant="interface-attribute-name">description</Text>
+            </h3>
+            <p>The description of the user interface.</p>
+
+            <h3>
+              <Text variant="interface-attribute-name">body</Text>
+            </h3>
+            <p>
+              A{" "}
+              <Link
+                to="/interfaces/interface-GraphicalUserInterfaceBody"
+                variant="primitive-name"
+              >
+                GraphicalUserInterfaceBody
+              </Link>
+              .
+            </p>
           </ContentSection>
         </CenteredColumn>
       </main>

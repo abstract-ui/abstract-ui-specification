@@ -11,7 +11,7 @@ import Link from "components/Link"
 const Page = () => {
   return (
     <>
-      <DocumentTitle title="GraphicalUserInterfaceBody interface &mdash; Abstract UI" />
+      <DocumentTitle title="Component Instance interface &mdash; Abstract UI" />
 
       <header>
         <CenteredColumn>
@@ -23,8 +23,7 @@ const Page = () => {
         <TitleBar>
           <CenteredColumn>
             <h1>
-              interface{" "}
-              <Text variant="interface-name">GraphicalUserInterfaceBody</Text>
+              interface <Text variant="interface-name">Component Instance</Text>
             </h1>
           </CenteredColumn>
         </TitleBar>
@@ -33,8 +32,8 @@ const Page = () => {
           <CenteredColumn>
             <Link to="/interfaces">Interfaces</Link>
             &nbsp;&nbsp;<strong>&raquo;</strong>&nbsp;&nbsp;
-            <Link to="/interfaces/interface-GraphicalUserInterfaceBody">
-              interface GraphicalUserInterfaceBody
+            <Link to="/interfaces/interface-Component-Instance">
+              interface Component Instance
             </Link>
           </CenteredColumn>
         </BreadcrumbsBar>
@@ -43,17 +42,9 @@ const Page = () => {
           <ContentSection>
             <h2>Overview</h2>
             <p>
-              A GraphicalUserInterfaceBody primitive represents a container for
-              the element graph of a graphical user interface.
-            </p>
-            <p>
-              Inerits:{" "}
-              <Link
-                to="/interfaces/raw-interface-Parent"
-                variant="primitive-name"
-              >
-                Parent
-              </Link>
+              A Component Instance primitive represents an element tree in a
+              user interface that is an exact copy of the element tree described
+              by a component.
             </p>
           </ContentSection>
         </CenteredColumn>

@@ -32,7 +32,7 @@ const Page = () => {
           <CenteredColumn>
             <Link to="/interfaces">Interfaces</Link>
             &nbsp;&nbsp;<strong>&raquo;</strong>&nbsp;&nbsp;
-            <Link to="/interfaces/interface-Project">interface Document</Link>
+            <Link to="/interfaces/interface-Document">interface Document</Link>
           </CenteredColumn>
         </BreadcrumbsBar>
 

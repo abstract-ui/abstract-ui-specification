@@ -41,7 +41,12 @@ const Page = () => {
         <CenteredColumn>
           <ContentSection>
             <h2>Overview</h2>
-            <p>QQQ</p>
+            <p>
+              Parent primitives are primitives that can have other primitives as
+              children. This parent-child relationship is the mechanism by which
+              hierarchies of elements (and primitives that are reducible to
+              elements) is described.
+            </p>
           </ContentSection>
 
           <hr />

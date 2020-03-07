@@ -41,7 +41,11 @@ const Page = () => {
         <CenteredColumn>
           <ContentSection>
             <h2>Overview</h2>
-            <p>QQQ</p>
+            <p>
+              Element primitives are primitives that can can be styled using
+              style properties and can act as both parent and children to other
+              primitives.
+            </p>
             <p>
               Inherits:{" "}
               <Link

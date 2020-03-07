@@ -11,7 +11,7 @@ import Link from "components/Link"
 const Page = () => {
   return (
     <>
-      <DocumentTitle title="StyleProperty interface &mdash; Abstract UI" />
+      <DocumentTitle title="Rectangle interface &mdash; Abstract UI" />
 
       <header>
         <CenteredColumn>
@@ -23,7 +23,7 @@ const Page = () => {
         <TitleBar>
           <CenteredColumn>
             <h1>
-              interface <Text variant="interface-name">StyleProperty</Text>
+              interface <Text variant="interface-name">Rectangle</Text>
             </h1>
           </CenteredColumn>
         </TitleBar>
@@ -32,8 +32,8 @@ const Page = () => {
           <CenteredColumn>
             <Link to="/interfaces">Interfaces</Link>
             &nbsp;&nbsp;<strong>&raquo;</strong>&nbsp;&nbsp;
-            <Link to="/interfaces/interface-StyleProperty">
-              interface StyleProperty
+            <Link to="/interfaces/interface-Rectangle">
+              interface Rectangle
             </Link>
           </CenteredColumn>
         </BreadcrumbsBar>
@@ -42,31 +42,18 @@ const Page = () => {
           <ContentSection>
             <h2>Overview</h2>
             <p>
-              A StyleProperty primitive represents a declaration of style for a{" "}
-              <Link
-                variant="primitive-name"
-                to="/interfaces/interface-Styleable"
-              >
-                Styleable
-              </Link>{" "}
-              primitive.
+              A Rectangle primitive represents a clearly delimited rectangular
+              space in a graphical user interface.
             </p>
-          </ContentSection>
-
-          <hr />
-
-          <ContentSection>
-            <h2>Attributes</h2>
-
-            <h3>
-              <Text variant="interface-attribute-name">name</Text>
-            </h3>
-            <p>The name of the style property.</p>
-
-            <h3>
-              <Text variant="interface-attribute-name">value</Text>
-            </h3>
-            <p>The value of the style property.</p>
+            <p>
+              Inherits:{" "}
+              <Link
+                to="/interfaces/raw-interface-Element"
+                variant="primitive-name"
+              >
+                Element
+              </Link>
+            </p>
           </ContentSection>
         </CenteredColumn>
       </main>

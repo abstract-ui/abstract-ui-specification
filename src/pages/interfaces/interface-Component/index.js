@@ -42,20 +42,9 @@ const Page = () => {
           <ContentSection>
             <h2>Overview</h2>
             <p>
-              A Component primitive represents a reusable element tree with a
-              well defined behavior.
+              A Component primitive represents a well-defined element tree that
+              may be instantiated throughout a user interface.
             </p>
-          </ContentSection>
-
-          <hr />
-
-          <ContentSection>
-            <h2>Attributes</h2>
-
-            <h3>
-              <Text variant="interface-attribute-name">xxx</Text>
-            </h3>
-            <p>xxx</p>
           </ContentSection>
         </CenteredColumn>
       </main>
