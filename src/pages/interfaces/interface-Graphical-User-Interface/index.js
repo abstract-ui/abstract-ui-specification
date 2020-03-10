@@ -69,10 +69,10 @@ const Page = () => {
             <p>
               A{" "}
               <Link
-                to="/interfaces/interface-GraphicalUserInterfaceBody"
+                to="/interfaces/interface-Graphical-User-Interface-Body"
                 variant="primitive-name"
               >
-                GraphicalUserInterfaceBody
+                Graphical User Interface Body
               </Link>
               .
             </p>

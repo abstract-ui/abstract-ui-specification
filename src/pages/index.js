@@ -31,7 +31,7 @@ const Index = () => {
               graphical user interfaces. Conceptually, a complete, well-formed
               Abstract UI "document" is a graph, every node of which is a
               semantically meaningful object referred to as an{" "}
-              <em>Abstract UI primitive</em>.
+              Abstract UI <strong>primitive</strong>.
             </p>
             <p>
               In Abstract UI, primitives are abstractions of graphical user

@@ -59,7 +59,7 @@ const Page = () => {
             <p>
               A list of{" "}
               <Link
-                to="/interfaces/interface-StyleProperty"
+                to="/interfaces/interface-Style-Property"
                 variant="primitive-name"
               >
                 Style Properties

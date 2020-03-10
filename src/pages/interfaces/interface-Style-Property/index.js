@@ -45,7 +45,7 @@ const Page = () => {
               A Style Property primitive represents a declaration of style for a{" "}
               <Link
                 variant="primitive-name"
-                to="/interfaces/interface-Styleable"
+                to="/interfaces/raw-interface-Styleable"
               >
                 Styleable
               </Link>{" "}

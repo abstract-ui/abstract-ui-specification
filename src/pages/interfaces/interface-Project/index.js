@@ -40,8 +40,8 @@ const Page = () => {
           <ContentSection>
             <h2>Overview</h2>
             <p>
-              A Project primitive represents a container for graphical user
-              interfaces as well as design system elements.
+              A Project primitive represents a container for one or more
+              graphical user interfaces as well as design system elements.
             </p>
           </ContentSection>
 
@@ -61,15 +61,17 @@ const Page = () => {
             <p>The description of the project.</p>
 
             <h3>
-              <Text variant="interface-attribute-name">user interfaces</Text>
+              <Text variant="interface-attribute-name">
+                graphical user interfaces
+              </Text>
             </h3>
             <p>
               A list of{" "}
               <Link
-                to="/interfaces/interface-UserInterface"
+                to="/interfaces/interface-Graphical-User-Interface"
                 variant="primitive-name"
               >
-                UserInterfaces
+                Graphical User Interfaces
               </Link>
               .
             </p>
